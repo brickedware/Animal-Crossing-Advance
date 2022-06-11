@@ -7,6 +7,9 @@ local app = {
 
    spritesheets = {
       -- all player, villager, and special spritesheets would be listed here
+      --"gspeech.bmp", --special character chat bubble
+      --"bspeech.bmp", --villager chat bubble
+      --"pspeech.bmp", --villager chat bubble
    },
 
    audio = {
