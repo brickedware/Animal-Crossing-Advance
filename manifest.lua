@@ -19,8 +19,8 @@ local app = {
    scripts = {
       -- All scripts and modules will go here
       "main.lua",
-      "sound.lua",
-      "title.lua",
+--      "sound.lua",  << packed into main as require did not work properly
+--      "title.lua",  << also in main
    },
 
    misc = {
