@@ -1,9 +1,9 @@
 fade(1, 0x000000)
 
-local function wait(microseconds) -- SIMPLE WAIT FUNCTION
-    local start = delta()
-    repeat until start >= delta()
-end
+--local function wait(microseconds) -- SIMPLE WAIT FUNCTION <<disabled, does not work yet
+--    local start = delta()
+--    repeat until start >= delta()
+--end
 
 local function loadTitle(musId) -- TITLESCREEN FUNCTION
     sound("m-nintdo.raw")
