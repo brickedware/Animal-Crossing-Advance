@@ -12,10 +12,14 @@ local app = {
    audio = {
       -- Title may be slightly modified from ACPG
       -- All tracks may be copied from ACPG in a ACWW/ACCF way, not good at music so original tracks are out of the question
+      "m-nintdo.raw",
    },
 
    scripts = {
       -- All scripts and modules will go here
+      "main.lua",
+      "sound.lua",
+      "title.lua",
    },
 
    misc = {
