@@ -2,14 +2,16 @@ local app = {
    name = "AnimalCrossingAdvance",
 
    tilesets = {
-      -- no tilesets yet, the only required tilesets are terrain for all seasons
+      -- no tilesets yet, the only required tilesets are menus and terrain for all seasons
+      "font-8x8.bmp",
+      
+      "gspeech.bmp", --special character chat bubble
+      "bspeech.bmp", --villager chat bubble
+      "pspeech.bmp", --villager chat bubble
    },
 
    spritesheets = {
       -- all player, villager, and special spritesheets would be listed here
-      --"gspeech.bmp", --special character chat bubble
-      --"bspeech.bmp", --villager chat bubble
-      --"pspeech.bmp", --villager chat bubble
    },
 
    audio = {
