@@ -5,4 +5,5 @@ Animal Crossing: Advance is a recreation of Animal Crossing: Population Growing 
 I'm using the [BPCore Engine](https://github.com/evanbowman/BPCore-Engine) for the main game engine, which allows you to program GBA games using Lua compared to C or C++, neither of which I am familiar with, which makes it easier on me. If you are contributing, please make sure you have all the requirements on the BPCore Engine page.
 
 ## Progress
+- As of 6/22/2022, project may be slow, I will be going on vacation soon.
 - As of 6/10/2022, I just started, so this GitHub page will have more to offer soon!
