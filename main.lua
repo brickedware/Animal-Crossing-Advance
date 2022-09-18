@@ -16,7 +16,12 @@ local function printText(text,x,y,rmargin)
     for u,v in pairs(tabl) do
         for i=32,256 do
             if v == utf8.char(i) then
-                tile(0, xx, yy, i-32)
+                if v == " " or v == "." or v == "," then
+                    
+                    tile(0, xx, yy, i-32)
+                else
+                    tile(0, xx, yy, i-32)
+                end
             end
         end
         if rmargin == false or xx <= 28 - rmargin then
@@ -79,26 +84,27 @@ local function speech(text,voice,open,color,name)
         for i=32,256 do
             if v == utf8.char(i) then
                 tile(0, xx, yy, i-32)
+            elseif v == "␤" then
+                yy = yy+1
+                xx = 2
             end
         end
-        if xx <= 25 then
+        if xx <= 25 and v ~= "␤" then
             xx = xx + 1
-        else
+        else 
             yy = yy+1
             xx = 3
         end
         if v ~= " " or "," or "!" or "?" or "" then
             sound("v" .. tostring(voice) .. "-" .. string.lower(v) .. ".raw")
         end
-        local deltime = 0
-        delta()
-        if btn(1) == true or btnp(1) or tabl[u+1] ~= utf8.char(32) then
-            repeat
-               deltime = deltime + delta()
-               clear()
-               display()
-           until deltime >= 250
-       end
+        --if btn(1) == true or btnp(1) or tabl[u+1] ~= utf8.char(32) then
+            --repeat
+             --   local rasterLine = rline()
+                clear()
+                display()
+           --until rasterLine >= 1
+      -- end
     end
 end
 ---------------------------------------------------------------------------------------------------
@@ -106,5 +112,6 @@ end
 ---------------------------------------------------------------------------------------------------
 
 loadTitle()
-speech("So, you've decided to move out? Get your own place? See the world? That's groovy.",0,true,"g","K.K.")
+speech("So, you've decided to␤move out? Get your own␤place? See the world?␤That's groovy.",0,true,"g","K.K.")
+--  ^^^ that will be replaced by a reference to a file
 clearDisplay()
