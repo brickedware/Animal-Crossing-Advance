@@ -20,6 +20,11 @@ I call the tilesets A and B tilesets (layer ID 2 and layer ID 1). Tileset slot A
 
 I split up the tilesets because on the GBA you only get limited palette for each image, and with BPCore-Engine, there's also a limit on how large an image can be, (presumably for it to properly load into RAM).
 
+## Plans
+### Ideas
+- Acre loading is going to be a bit of a problem, so I might need to research documentation and stuff to figure out how to get it either all as one chunk or seperated by acre as it is on the GameCube.
+
+
 ## Updates
 - 4/8/2023, I have not been working on this project recently, however, I have found out that the sprites from some of the GBA minigames in AC and DNMe+ have been extracted. I will most likely be using those or basing custom assets off of a similar style.
 - As of 7/7/2022, project will continue development.
