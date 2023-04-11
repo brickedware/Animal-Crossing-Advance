@@ -1,4 +1,6 @@
 # Animal Crossing: Advance
+*name is WIP as of now*
+
 Animal Crossing: Advance is a recreation of Animal Crossing: Population Growing for the Game Boy Advance. Due to graphics and size limitations, and the fact that the GameCube runs at 435Mhz with loads of ram and processing units, compared to the 16.78Mhz GameBoy Advance, it won't look as good, neither will it have 3D graphics or... 236 villagers (it will most likely have <100 of fan favorites from Animal Crossing GameCube), but it will function as a portable Animal Crossing game on the GBA, so that's that.
 
 ## Engine
