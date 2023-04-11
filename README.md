@@ -7,9 +7,15 @@ I'm using the [BPCore Engine](https://github.com/evanbowman/BPCore-Engine) for t
 ## Progress
 Current progress:
 Tilemaps are working! All code is in the sources, go to the BPCore-Engine page for more information on compiling.
+
+I have extracted these tilesets myself, however there are some other assets from the Animal Crossing GBA minigames that I wouldn't be able to get myself, so I'll have credits for those assets somewhere in the repository and/or in game.
+
 How this works is that it uses 2 layers of tilesets. My only problem is that this reduces the amount of other layers significantly, so I'm going to need to figure out how to get the overlays and text to work.
+
 ![Island Tilemap](https://raw.githubusercontent.com/brickedware/Animal-Crossing-Advance/main/screenshots/islandtilemap.png "Island Tilemap")
+
 I call the tilesets A and B tilesets (layer ID 2 and layer ID 1). Tileset slot A is commonly reserved for ground when outside, or a room if inside. Tileset slot B is reserved for extras, and in this case, the sand on a beach.
+
 I split up the tilesets because on the GBA you only get limited palette for each image, and with BPCore-Engine, there's also a limit on how large an image can be, (presumably for it to properly load into RAM).
 
 ## Updates
