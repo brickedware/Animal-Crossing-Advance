@@ -105,7 +105,7 @@ local function speech(text,voice,open,color,name)
             yy = yy+1
             xx = 3
         end
-        if v ~= " " or "," or "!" or "?" or "" then
+        if v ~= " " or "," or "!" or "?" or "." or "" then
             sound("audio/voice/" .. tostring(voice) .. "/" .. string.lower(v) .. ".raw")
         end
         --if btn(1) == true or btnp(1) or tabl[u+1] ~= utf8.char(32) then

@@ -28,7 +28,6 @@ local app = {
       "audio/ui/nintendo.raw",
       "audio/music/title.raw",
 
-      "audio/voice/0/..raw",
       "audio/voice/0/0.raw",
       "audio/voice/0/1.raw",
       "audio/voice/0/2.raw",
